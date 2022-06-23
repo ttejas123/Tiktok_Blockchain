@@ -1,6 +1,6 @@
 import './App.css';
 import React, {useMemo} from 'react';
-import {ConnectionProvider, WalletProvider, useWallet, useConnection } from "@solana/wallet-adapter-react"
+import {ConnectionProvider, WalletProvider } from "@solana/wallet-adapter-react"
 
 import { SOLANA_HOST, NETWORK } from './utils/const';
 import {
