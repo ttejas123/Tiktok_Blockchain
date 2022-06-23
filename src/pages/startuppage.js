@@ -5,7 +5,7 @@ import Signup from './Signup'
 import { useWallet } from  '@solana/wallet-adapter-react'              
 import { SOLANA_HOST } from '../utils/const'
 import { getProgramInstance } from '../utils/utils'
-import { TOKEN_PROGRAM_ID } from '@solana/spl-token'
+// import { TOKEN_PROGRAM_ID } from '@solana/spl-token'
 
 import useAccount from '../hooks/useAccount'
 
@@ -15,7 +15,7 @@ const { BN, web3 } = anchor
 const { SystemProgram } = web3
 
 const defaultAccounts = {
-    tokenProgram: TOKEN_PROGRAM_ID,
+    // tokenProgram: TOKEN_PROGRAM_ID,
     clock: anchor.web3.SYSVAR_CLOCK_PUBKEY,
     systemProgram: SystemProgram.programId,
 }

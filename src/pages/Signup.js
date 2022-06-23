@@ -18,7 +18,6 @@ function Alloutes(props) {
         
         <div className="bg-purple-700 rounded-lg w-[80%] text-center text-white py-[9px] font-bold cursor-pointer " onClick={() => {
             console.log(name+" "+img)
-
             props.signup(name, img)
             // props.setAccount(true)
           }}>Sign Up</div>

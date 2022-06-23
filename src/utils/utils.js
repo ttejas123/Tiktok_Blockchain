@@ -8,11 +8,11 @@ export function getProgramInstance(
   wallet,
 ) {
   if (!wallet.publicKey) throw new WalletNotConnectedError();
-
-  const provider = new anchor.Provider(
+  
+  const provider = new anchor.AnchorProvider(
     connection,
     wallet,
-    anchor.Provider.defaultOptions(),
+    anchor.AnchorProvider.defaultOptions(),
   );
   // Read the generated IDL.
   const idl = TIKTOK_IDL;
